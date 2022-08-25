@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--very-dark-blue-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+}
+
+.container {
+    background-color: var(--very-dark-blue-card);
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px hsla(0, 0%, 0%, 0.349);
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+    border: solid var(--very-dark-blue-line);
+    border-width: 0 0 1px 0;
+}
+
+.details .image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.details .image-box:hover {
+    cursor: pointer;
+    background-color: var(--cyan);
+
+}
+
+.details .image-box .icon-view {
+    position: absolute;
+    opacity: 0;
+}
+
+.details .image-box:hover .icon-view {
+    opacity: 1;
+    z-index: 1;
+}
+
+.details .image-box .image-equilibrium {
+    height: 220px;
+    border-radius: 5px;
+}
+
+.details .image-box:hover .image-equilibrium {
+    opacity: 0.5;
+    transition: all ease-in-out 0.5s;
+}
+
+
+.details .nft-name {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.details .nft-name:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.details .description {
+    color: var(--soft-blue);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.details .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.details .price :nth-child(1) {
+    display: flex;
+    gap: 5px;
+    color: var(--cyan);
+    font-weight: 600;
+
+}
+
+.details .price :last-child {
+    color: var(--soft-blue);
+    display: flex;
+    gap: 5px;
+}
+
+.credits {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 100vh;
+}
+
+.credits .author-profile-picture {
+    height: 25px;
+    border: solid var(--white) 1px;
+    border-radius: 30px;
+}
+
+.credits :last-child {
+    color: var(--soft-blue);
+}
+
+.credits .author-profile {
+    color: var(--white);
+}
+
+.credits .author-profile:hover {
+    color: var(--cyan);
+}
+
+
+.attribution {
+    position: absolute;
+    bottom: 15px;
+    color: var(--white);
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
