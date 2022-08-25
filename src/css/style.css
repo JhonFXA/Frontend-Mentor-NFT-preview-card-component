@@ -18,6 +18,12 @@ body {
     font-size: 12px;
 }
 
+main {
+    border: solid;
+}
+
+
+
 .container {
     background-color: var(--very-dark-blue-card);
     display: flex;
@@ -135,10 +141,11 @@ body {
     color: var(--cyan);
 }
 
-
-.attribution {
+footer {
     position: absolute;
     bottom: 15px;
+}
+.attribution {
     color: var(--white);
     font-size: 11px;
     text-align: center;
